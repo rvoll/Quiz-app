@@ -10,3 +10,18 @@ main {
   flex-direction: column;
   gap: 10px;
 }
+
+.card {
+  margin: 20px 0;
+  border: 2px solid #000;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  background-color: var(--card-background-color);
+  border-radius: 10px;
+}
+
+.question {
+  margin: 30px 50px;
+  line-height: 1.25em;
+}
