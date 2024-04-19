@@ -1,17 +1,7 @@
-* {
-  box-sizing: border-box;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 15vh;
-  background-color: lightskyblue;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+@import "header.css";
+@import "button.css";
+@import "card.css";
+@import "navigation.css";
 
 main {
   margin-top: 15vh;
@@ -19,22 +9,4 @@ main {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  font-size: large;
-  padding: 20px;
-  border: 2px solid black;
-}
-
-ul {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  list-style: none;
-  padding: 0;
 }
