@@ -9,6 +9,13 @@
     <!-- <link rel="stylesheet" href="./CSS/components/button.css" /> -->
     <link rel="stylesheet" href="./CSS/components/card.css" />
     <!-- <link rel="stylesheet" href="./CSS/components/navigation.css" /> -->
+    <!-- NOT SURE ABOUT THE FOLLOWING - doing this to integrate the bookmark icon: -->
+    <link
+      rel="icon"
+      type="image/png"
+      alt="bookmark"
+      href="./pictures/StarBookmark.png"
+    />
   </head>
 
   <body>
@@ -17,7 +24,9 @@
     </header>
 
     <main>
-      <section class="card">
+      <section class="card" id="firstCard">
+        <img src="./pictures/StarBookmark.png" height="40" alt="bookmarked" />
+
         <p class="question">What property flips the axes in flexbox?</p>
 
         <button>Show answer</button>
@@ -30,6 +39,8 @@
       </section>
 
       <section class="card">
+        <img src="./pictures/StarBookmark.png" height="40" alt="bookmarked" />
+
         <p class="answer">flex-direction</p>
         <button>Show answer</button>
 
@@ -39,6 +50,59 @@
           <li>#css</li>
         </ul>
       </section>
+
+      <section class="card">
+        <img src="./pictures/StarBookmark.png" height="40" alt="bookmarked" />
+        <p class="answer">flex-direction</p>
+        <button>Show answer</button>
+
+        <ul class="tags">
+          <li>#html</li>
+          <li>#flexbox</li>
+          <li>#css</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <img src="./pictures/StarBookmark.png" height="40" alt="bookmarked" />
+
+        <p class="answer">flex-direction</p>
+        <button>Show answer</button>
+
+        <ul class="tags">
+          <li>#html</li>
+          <li>#flexbox</li>
+          <li>#css</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <img src="./pictures/StarBookmark.png" height="40" alt="bookmarked" />
+
+        <p class="answer">flex-direction</p>
+        <button class="showAnswer">Show answer</button>
+
+        <ul class="tags">
+          <li>#html</li>
+          <li>#flexbox</li>
+          <li>#css</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <img src="./pictures/StarBookmark.png" height="40" alt="bookmarked" />
+
+        <p class="answer">flex-direction</p>
+        <button>Show answer</button>
+
+        <ul class="tags">
+          <li>#html</li>
+          <li>#flexbox</li>
+          <li>#css</li>
+        </ul>
+      </section>
+      <!-- This should somehow work with the bookmarks: -->
+      <a href="#firstCard">Jump to Card 1</a>
 
       <footer></footer>
     </main>
