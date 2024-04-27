@@ -25,10 +25,35 @@
 
     <main>
       <section class="card" id="firstCard">
-        <img src="./pictures/StarBookmark.png" height="40" alt="bookmarked" />
+        <img src="./pictures/bookmark.svg" height="40" alt="bookmarked" />
 
         <p class="question">What property flips the axes in flexbox?</p>
+        <!-- connect this button with a function in a js file -->
+        <button id="answerButton" data-js="answerButton">Show answer</button>
 
+        <ul class="tags">
+          <li>#html</li>
+          <li>#flexbox</li>
+          <li>#css</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <img src="./pictures/bookmark.svg" height="40" alt="bookmarked" />
+
+        <p class="answer">flex-direction</p>
+        <button>Hide answer</button>
+
+        <ul class="tags">
+          <li>#html</li>
+          <li>#flexbox</li>
+          <li>#css</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <img src="./pictures/bookmark.svg" height="40" alt="bookmarked" />
+        <p class="answer">What defines the alignment along the main axis?</p>
         <button>Show answer</button>
 
         <ul class="tags">
@@ -39,22 +64,10 @@
       </section>
 
       <section class="card">
-        <img src="./pictures/StarBookmark.png" height="40" alt="bookmarked" />
+        <img src="./pictures/bookmark.svg" height="40" alt="bookmarked" />
 
-        <p class="answer">flex-direction</p>
-        <button>Show answer</button>
-
-        <ul class="tags">
-          <li>#html</li>
-          <li>#flexbox</li>
-          <li>#css</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <img src="./pictures/StarBookmark.png" height="40" alt="bookmarked" />
-        <p class="answer">flex-direction</p>
-        <button>Show answer</button>
+        <p class="answer">justify-content</p>
+        <button>Hide answer</button>
 
         <ul class="tags">
           <li>#html</li>
@@ -64,23 +77,13 @@
       </section>
 
       <section class="card">
-        <img src="./pictures/StarBookmark.png" height="40" alt="bookmarked" />
+        <img src="./pictures/bookmark.svg" height="40" alt="bookmarked" />
 
-        <p class="answer">flex-direction</p>
-        <button>Show answer</button>
-
-        <ul class="tags">
-          <li>#html</li>
-          <li>#flexbox</li>
-          <li>#css</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <img src="./pictures/StarBookmark.png" height="40" alt="bookmarked" />
-
-        <p class="answer">flex-direction</p>
-        <button class="showAnswer">Show answer</button>
+        <p class="answer">
+          What defines the default behavior for how flex items are laid out
+          along the cross axis?
+        </p>
+        <button class="showAnswer">Show anser</button>
 
         <ul class="tags">
           <li>#html</li>
@@ -89,11 +92,11 @@
         </ul>
       </section>
 
-      <section class="card">
-        <img src="./pictures/StarBookmark.png" height="40" alt="bookmarked" />
+      <section class="card" id="cardAlignItems">
+        <img src="./pictures/bookmark.svg" height="40" alt="bookmarked" />
 
-        <p class="answer">flex-direction</p>
-        <button>Show answer</button>
+        <p class="answer">align-items</p>
+        <button>Hide answer</button>
 
         <ul class="tags">
           <li>#html</li>
@@ -102,9 +105,44 @@
         </ul>
       </section>
       <!-- This should somehow work with the bookmarks: -->
-      <a href="#firstCard">Jump to Card 1</a>
 
-      <footer></footer>
+      <footer>
+        <nav class="navBarLinks">
+          <button class="navBarButton">
+            <a href="#">
+              <img
+                src="./pictures/homeIcon.png"
+                height="40"
+                alt="home"
+                class="navBarIcon"
+                id="homeIcon"
+              />
+            </a>
+          </button>
+          <button class="navBarButton">
+            <a href="#">
+              <img
+                src="./pictures/bookmark.svg"
+                height="40"
+                alt="bookmarks"
+                class="navBarIcon"
+                id="untaggedBookmarkIcon"
+              />
+            </a>
+          </button>
+          <button class="navBarButton">
+            <a href="#">
+              <img
+                src="./pictures/userIcon.png"
+                height="40"
+                alt="user profile"
+                class="navBarIcon"
+                id="userIcon"
+              />
+            </a>
+          </button>
+        </nav>
+      </footer>
     </main>
   </body>
 </html>
