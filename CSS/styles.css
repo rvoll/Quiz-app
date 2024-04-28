@@ -3,7 +3,15 @@
 /* @import "button.css"; */
 /* @import "navigation.css"; */
 
-*,
+/* TO DOs
+- Show answer upon click (toggle = show/hide)
+- fill bookmarks
+- exchange home icon
+- link index and bookmarks pages via the anchor element
+- (fix highlighting in navbar)
+*/
+/* 
+*, */
 *::before,
 *::after {
   box-sizing: border-box;
@@ -27,6 +35,19 @@ main {
   flex-direction: column;
   gap: 10px;
   background-color: pink;
+}
+
+.mainProfilePage {
+  height: 100vh;
+  width: 90vw;
+  padding: 20px;
+}
+
+.profileNamePicture {
+  /* height: 120px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .card {
@@ -123,6 +144,10 @@ footer {
   border: none;
 }
 
+.nameProfilePage {
+  display: flex;
+  justify-content: flex-end;
+}
 /* tried to fill the bookmark with this: */
 /* #untaggedBookmarkIcon {
   fill-black
