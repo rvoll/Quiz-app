@@ -16,7 +16,7 @@
 /* FRAGEN:
 Wie mache ich es, dass die oberste Karte nicht hinter dem Header verschwindet? 
  */
-/*  */
+/* Wie mache ich es, dass der main body genauso breit ist wie headerund footer? ohne weiße Ränder links und rechts? */
 main {
   /* font-family: Comic "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", */
   /* "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
@@ -110,34 +110,20 @@ footer {
   justify-content: space-around;
   align-items: center;
 
-  padding: 20px;
+  padding: 15px;
 }
 
-#untaggedBookmarkIcon {
-  -moz-context-properties: fill, stroke;
+/* How can I activate only the home button by changing its background colour? Do I have to create a box that I can color-in around the icon? */
+.activatedNavBarButton {
+  background-color: var(--card-background-color);
+  height: 8vh;
+  width: 30vw;
+  border-radius: 6px;
+  margin-top: 0;
+  border: none;
 }
 
-/* .ul {
-  display: flex;
-  hiermit werden die Elemente waagerecht angeordnet
-  flex-direction: row;
-} */
-/* align-items: center; */
-/* justify-content:space-around; */
-/*align-self: flex-start;
-  padding: 0;
-  gap: 10px;
-   .navBarIcon {
-   }
-
-
-}
-
-/* navigation: */
-/* ul {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  list-style: none;
-  padding: 0;
+/* tried to fill the bookmark with this: */
+/* #untaggedBookmarkIcon {
+  fill-black
 } */
